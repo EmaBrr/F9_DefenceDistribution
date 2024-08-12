@@ -1,0 +1,608 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@keyframes grain {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0);
+  }
+  70% {
+    transform: translate(0, 15%);
+  }
+  80% {
+    transform: translate(3%, 25%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+body {
+  position: relative;
+  margin: 0;
+  height: 100vh;
+  background-color: #252832;
+  color: white;
+  overflow: hidden;
+  min-width: 440px;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -50%;
+  width: 300%;
+  height: 300%;
+  background-image: url("https://www.doublepoint.studio/wp-content/uploads/2021/11/graineffect.png");
+  opacity: 1;
+  animation: grain 15s steps(10) infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+header {
+  width: 100%;
+  display: inline-block;
+}
+header .slogan {
+  height: 25px;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: #EA4B4D;
+  display: flex;
+  align-items: center;
+}
+header .slogan .slogan-text {
+  display: inline-block;
+  font-family: "Poppins", Sans-serif;
+  animation: scroll-right 30s linear infinite;
+  color: #f8f7f6;
+  width: 100%;
+}
+header .nav {
+  width: 100%;
+  display: inline-block;
+  font-family: "Poppins", Sans-serif;
+}
+header .nav .nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+header .nav .nav-container .logo {
+  position: absolute;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+}
+header .nav .nav-container .logo a {
+  display: flex;
+  align-items: center;
+  color: #f8f7f6;
+}
+header .nav .nav-container .logo a :visited {
+  color: #f8f7f6;
+}
+header .nav .nav-container .logo a .logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease;
+}
+header .nav .nav-container .logo a .logo-container:hover {
+  transform: scale(0.8);
+}
+header .nav .nav-container .logo a .logo-container h3 {
+  font-weight: 300;
+  display: flex;
+  letter-spacing: 1px;
+  align-items: center;
+}
+header .nav .nav-container .navigation {
+  width: 100%;
+  float: right;
+  width: auto;
+  padding: 0;
+}
+header .nav .nav-container .navigation .nav-mobile {
+  display: none;
+}
+header .nav .nav-container .navigation .nav-items {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+}
+header .nav .nav-container .navigation .nav-items li {
+  float: left;
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+header .nav .nav-container .navigation .nav-items li a {
+  font-family: "Poppins", Sans-serif;
+  color: #f8f7f6;
+  font-weight: 300;
+  transition: transform 0.5s ease;
+}
+header .nav .nav-container .navigation .nav-items li a:hover {
+  transform: scale(0.8);
+}
+header .nav .nav-container .navigation .nav-items li a :visited {
+  color: #f8f7f6;
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@media screen and (min-width: 1500px) {
+  .slogan .slogan-text {
+    font-size: 1rem;
+  }
+  .nav {
+    height: 90px;
+  }
+  .nav .nav-container .logo {
+    height: 90px;
+  }
+  .nav .nav-container .logo a {
+    height: 90px;
+  }
+  .nav .nav-container .logo a .logo-container h3 {
+    padding: 0 20px;
+    font-size: 1.4rem;
+  }
+  .nav .nav-container .navigation .nav-items li {
+    height: 90px;
+    padding: 10px 40px;
+  }
+  .nav .nav-container .navigation .nav-items li a {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 891px) and (max-width: 1499px) {
+  .slogan .slogan-text {
+    font-size: 0.9rem;
+  }
+  .nav {
+    height: 70px;
+  }
+  .nav .nav-container {
+    width: 90%;
+  }
+  .nav .nav-container .logo {
+    height: 70px;
+  }
+  .nav .nav-container .logo a {
+    height: 70px;
+  }
+  .nav .nav-container .logo a .logo-container h3 {
+    padding: 0 20px;
+    font-size: 1.2rem;
+  }
+  .nav .nav-container .navigation .nav-items li {
+    height: 70px;
+    padding: 10px 25px;
+  }
+  .nav .nav-container .navigation .nav-items li a {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 890px) {
+  header {
+    min-width: 440px;
+  }
+  header .slogan .slogan-text {
+    font-size: 1rem;
+  }
+  header .nav {
+    height: 60px;
+  }
+  header .nav .nav-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  header .nav .nav-container .logo {
+    height: 60px;
+  }
+  header .nav .nav-container .logo a {
+    height: 60px;
+  }
+  header .nav .nav-container .logo a .logo-container h3 {
+    padding: 0 15px;
+    font-size: 1.1rem;
+    letter-spacing: 1.1px;
+  }
+  header .nav .nav-container .navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  header .nav .nav-container .navigation .nav-mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: 60px;
+    padding: 20px;
+  }
+  header .nav .nav-container .navigation .nav-mobile .nav-ham {
+    position: absolute;
+    left: 10px;
+    z-index: 3000;
+    cursor: pointer;
+    padding: 10px 35px 10px 0px;
+  }
+  header .nav .nav-container .navigation .nav-mobile .nav-ham span {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 3px;
+    width: 35px;
+    background: #f8f7f6;
+    position: absolute;
+    display: block;
+    content: "";
+    transition: all 300ms ease-in-out;
+  }
+  header .nav .nav-container .navigation .nav-mobile .nav-ham span::after {
+    bottom: -10px;
+    cursor: pointer;
+    border-radius: 1px;
+    height: 3px;
+    width: 35px;
+    background: #f8f7f6;
+    position: absolute;
+    display: block;
+    content: "";
+    transition: all 300ms ease-in-out;
+  }
+  header .nav .nav-container .navigation .nav-mobile .nav-ham span::before {
+    top: -10px;
+    cursor: pointer;
+    border-radius: 1px;
+    height: 3px;
+    width: 35px;
+    background: #f8f7f6;
+    position: absolute;
+    display: block;
+    content: "";
+    transition: all 300ms ease-in-out;
+  }
+  header .nav .nav-container .navigation .nav-mobile .active span {
+    background-color: transparent;
+  }
+  header .nav .nav-container .navigation .nav-mobile .active span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  header .nav .nav-container .navigation .nav-mobile .active span::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  header .nav .nav-container .navigation .nav-items {
+    display: none !important;
+  }
+}
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.welcome .container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1400px;
+}
+@media screen and (max-width: 1500px) {
+  .welcome .container {
+    width: 90%;
+  }
+}
+.welcome .container .headline {
+  background-image: url("../img/Apie.png");
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 40px 90px;
+  height: 700px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.25), 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.welcome .container .headline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  z-index: 0;
+}
+.welcome .container .headline .text-box {
+  color: white;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  width: 60%;
+  animation: slide-up 1.2s ease-out forwards;
+}
+@media screen and (max-width: 1266px) {
+  .welcome .container .headline .text-box {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 985px) {
+  .welcome .container .headline .text-box {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 790px) {
+  .welcome .container .headline .text-box {
+    width: 90%;
+  }
+}
+.welcome .container .headline .text-box h1 {
+  font-family: "Poppins", Sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  padding: 20px 0px;
+  color: #f8f7f6;
+}
+@media screen and (max-width: 1266px) {
+  .welcome .container .headline .text-box h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 985px) {
+  .welcome .container .headline .text-box h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 790px) {
+  .welcome .container .headline .text-box h1 {
+    font-size: 2.3rem;
+    line-height: 1.1;
+  }
+}
+@media screen and (max-width: 550px) {
+  .welcome .container .headline .text-box h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .welcome .container .headline .text-box h1 {
+    font-size: 1.8rem;
+  }
+}
+.welcome .container .headline .text-box h2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 1266px) {
+  .welcome .container .headline .text-box h2 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 985px) {
+  .welcome .container .headline .text-box h2 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 790px) {
+  .welcome .container .headline .text-box h2 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .welcome .container .headline .text-box h2 {
+    font-size: 1.1rem;
+  }
+}
+.welcome .container .headline .text-box button {
+  background-color: #EA4B4D;
+  color: #f8f7f6;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 14px 40px;
+  margin: 25px 0px;
+  border-radius: 8px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 1266px) {
+  .welcome .container .headline .text-box button {
+    padding: 14px 35px;
+    font-size: 1.05rem;
+  }
+}
+@media screen and (max-width: 985px) {
+  .welcome .container .headline .text-box button {
+    padding: 13px 30px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 790px) {
+  .welcome .container .headline .text-box button {
+    padding: 13px 25px;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .welcome .container .headline .text-box button {
+    padding: 12px 20px;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 1266px) {
+  .welcome .container .headline {
+    padding: 30px 60px;
+    height: 600px;
+  }
+}
+@media screen and (max-width: 985px) {
+  .welcome .container .headline {
+    padding: 20px 40px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .welcome .container .headline {
+    padding: 20px 40px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .welcome .container .headline {
+    padding: 15px 20px;
+    height: 350px;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0.2;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
