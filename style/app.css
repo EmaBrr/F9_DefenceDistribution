@@ -125,11 +125,11 @@ h6 {
 body {
   position: relative;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #252832;
   color: white;
   overflow: hidden;
-  min-width: 440px;
+  min-width: 370px;
 }
 
 body::after {
@@ -311,7 +311,7 @@ header .nav .nav-container .navigation .nav-items li a :visited {
 }
 @media screen and (max-width: 890px) {
   header {
-    min-width: 440px;
+    min-width: 370px;
   }
   header .slogan .slogan-text {
     font-size: 1rem;
