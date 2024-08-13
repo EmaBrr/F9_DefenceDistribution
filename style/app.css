@@ -203,6 +203,9 @@ header .nav .nav-container .logo a .logo-container {
 header .nav .nav-container .logo a .logo-container:hover {
   transform: scale(0.8);
 }
+header .nav .nav-container .logo a .logo-container img {
+  max-height: 47px;
+}
 header .nav .nav-container .logo a .logo-container h3 {
   font-weight: 300;
   display: flex;
@@ -269,6 +272,9 @@ header .nav .nav-container .navigation .nav-items li a :visited {
   .nav .nav-container .logo a {
     height: 90px;
   }
+  .nav .nav-container .logo a .logo-container img {
+    height: 47px;
+  }
   .nav .nav-container .logo a .logo-container h3 {
     padding: 0 20px;
     font-size: 1.4rem;
@@ -281,7 +287,7 @@ header .nav .nav-container .navigation .nav-items li a :visited {
     font-size: 1.25rem;
   }
 }
-@media screen and (min-width: 891px) and (max-width: 1499px) {
+@media screen and (min-width: 921px) and (max-width: 1499px) {
   .slogan .slogan-text {
     font-size: 0.9rem;
   }
@@ -297,19 +303,22 @@ header .nav .nav-container .navigation .nav-items li a :visited {
   .nav .nav-container .logo a {
     height: 70px;
   }
+  .nav .nav-container .logo a .logo-container img {
+    height: 37px;
+  }
   .nav .nav-container .logo a .logo-container h3 {
     padding: 0 20px;
     font-size: 1.2rem;
   }
   .nav .nav-container .navigation .nav-items li {
     height: 70px;
-    padding: 10px 25px;
+    padding: 10px 23px;
   }
   .nav .nav-container .navigation .nav-items li a {
     font-size: 1.1rem;
   }
 }
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 920px) {
   header {
     min-width: 370px;
   }
@@ -331,6 +340,9 @@ header .nav .nav-container .navigation .nav-items li a :visited {
   }
   header .nav .nav-container .logo a {
     height: 60px;
+  }
+  header .nav .nav-container .logo a .logo-container img {
+    height: 40px;
   }
   header .nav .nav-container .logo a .logo-container h3 {
     padding: 0 15px;

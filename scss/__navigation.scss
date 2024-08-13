@@ -58,6 +58,10 @@ header {
               transform: scale(0.8);
             }
 
+            img {
+              max-height: 47px;
+            }
+
             h3 {
               font-weight: 300;
               display: flex;
@@ -140,9 +144,15 @@ header {
         a {
           height: 90px;
 
-          .logo-container h3 {
-            padding: 0 20px;
-            font-size: 1.4rem;
+          .logo-container {
+            img {
+              height: 47px;
+            }
+
+            h3 {
+              padding: 0 20px;
+              font-size: 1.4rem;
+            }
           }
         }
       }
@@ -159,7 +169,7 @@ header {
   }
 }
 
-@media screen and (min-width: 891px) and (max-width: 1499px) {
+@media screen and (min-width: 921px) and (max-width: 1499px) {
   .slogan .slogan-text {
     font-size: 0.9rem;
   }
@@ -176,16 +186,22 @@ header {
         a {
           height: 70px;
 
-          .logo-container h3 {
-            padding: 0 20px;
-            font-size: 1.2rem;
+          .logo-container {
+            img {
+              height: 37px;
+            }
+
+            h3 {
+              padding: 0 20px;
+              font-size: 1.2rem;
+            }
           }
         }
       }
 
       .navigation .nav-items li {
         height: 70px;
-        padding: 10px 25px;
+        padding: 10px 23px;
 
         a {
           font-size: 1.1rem;
@@ -195,8 +211,8 @@ header {
   }
 }
 
-// Mobile Screens (max-width: 890px)
-@media screen and (max-width: 890px) {
+// Mobile Screens (max-width: 920px)
+@media screen and (max-width: 920px) {
   header {
     min-width: 370px;
 
@@ -220,10 +236,17 @@ header {
           a {
             height: 60px;
 
-            .logo-container h3 {
-              padding: 0 15px;
-              font-size: 1.1rem;
-              letter-spacing: 1.1px;
+            .logo-container {
+
+              img {
+                height: 40px;
+              }
+
+              h3 {
+                padding: 0 15px;
+                font-size: 1.1rem;
+                letter-spacing: 1.1px;
+              }
             }
           }
         }
@@ -312,4 +335,3 @@ header {
     }
   }
 }
-
