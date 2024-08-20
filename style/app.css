@@ -128,11 +128,11 @@ body {
   min-height: 100vh;
   background-color: #252832;
   color: white;
-  overflow: hidden;
   min-width: 370px;
+  height: 100%;
 }
 
-body::after {
+.grain-overlay {
   content: "";
   position: absolute;
   top: -100%;
@@ -144,6 +144,7 @@ body::after {
   animation: grain 15s steps(10) infinite;
   pointer-events: none;
   z-index: -1;
+  overflow-y: hidden;
 }
 
 header {
@@ -425,6 +426,7 @@ header .nav .nav-container .navigation .nav-items li a :visited {
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-bottom: 30px;
 }
 .welcome .container {
   display: flex;
@@ -440,7 +442,6 @@ header .nav .nav-container .navigation .nav-items li a :visited {
 .welcome .container .headline {
   background-image: url("../img/Apie.png");
   position: relative;
-  background-size: cover;
   background-position: center;
   border-radius: 15px;
   padding: 40px 90px;
@@ -469,7 +470,6 @@ header .nav .nav-container .navigation .nav-items li a :visited {
   position: relative;
   z-index: 1;
   width: 60%;
-  animation: slide-up 1.2s ease-out forwards;
 }
 @media screen and (max-width: 1266px) {
   .welcome .container .headline .text-box {
@@ -608,13 +608,38 @@ header .nav .nav-container .navigation .nav-items li a :visited {
   }
 }
 
-@keyframes slide-up {
-  from {
-    transform: translateY(100%);
-    opacity: 0.2;
+@keyframes grain {
+  0% {
+    transform: translate(0, 0);
   }
-  to {
-    transform: translateY(0);
-    opacity: 1;
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0);
+  }
+  70% {
+    transform: translate(0, 15%);
+  }
+  80% {
+    transform: translate(3%, 25%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }

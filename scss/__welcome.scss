@@ -14,6 +14,7 @@ $headline-height-xxsmall: 350px;
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-bottom: 30px;
 
   .container {
     display: flex;
@@ -28,7 +29,7 @@ $headline-height-xxsmall: 350px;
     .headline {
       background-image: url("../img/Apie.png");
       position: relative;
-      background-size: cover;
+      // background-size: cover;
       background-position: center;
       border-radius: 15px;
       padding: $headline-padding-large;
@@ -38,7 +39,8 @@ $headline-height-xxsmall: 350px;
       margin: 0 auto;
       display: flex;
       align-items: center;
-      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.25), 0 6px 12px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.25),
+        0 6px 12px rgba(0, 0, 0, 0.2);
 
       &::before {
         content: "";
@@ -58,7 +60,7 @@ $headline-height-xxsmall: 350px;
         position: relative;
         z-index: 1;
         width: 60%;
-        animation: slide-up 1.2s ease-out forwards;
+        // animation: slide-up 1.2s ease-out forwards;
 
         @media screen and (max-width: 1266px) {
           width: 70%;
@@ -183,13 +185,115 @@ $headline-height-xxsmall: 350px;
   }
 }
 
-@keyframes slide-up {
-  from {
-    transform: translateY(100%);
-    opacity: 0.2;
+// @keyframes slide-up {
+//   from {
+//     transform: translateY(100%);
+//     opacity: 0.2;
+//   }
+//   to {
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes zoomOutBg {
+//   0% {
+//     background-size: 120%; /* Start zoomed-in */
+//   }
+//   5% {
+//     background-size: 119%;
+//   }
+//   10% {
+//     background-size: 118%;
+//   }
+//   15% {
+//     background-size: 117%;
+//   }
+//   20% {
+//     background-size: 116%;
+//   }
+//   25% {
+//     background-size: 115%;
+//   }
+//   30% {
+//     background-size: 114%;
+//   }
+//   35% {
+//     background-size: 113%;
+//   }
+//   40% {
+//     background-size: 112%;
+//   }
+//   45% {
+//     background-size: 111%;
+//   }
+//   50% {
+//     background-size: 110%;
+//   }
+//   55% {
+//     background-size: 109%;
+//   }
+//   60% {
+//     background-size: 108%;
+//   }
+//   65% {
+//     background-size: 107%;
+//   }
+//   70% {
+//     background-size: 106%;
+//   }
+//   75% {
+//     background-size: 105%;
+//   }
+//   80% {
+//     background-size: 104%;
+//   }
+//   85% {
+//     background-size: 103%;
+//   }
+//   90% {
+//     background-size: 102%;
+//   }
+//   95% {
+//     background-size: 101%;
+//   }
+//   100% {
+//     background-size: cover; /* End at the original size */
+//   }
+// }
+
+@keyframes grain {
+  0% {
+    transform: translate(0, 0);
   }
-  to {
-    transform: translateY(0);
-    opacity: 1;
+  10% {
+    transform: translate(-5%, -10%);
+  }
+  20% {
+    transform: translate(-15%, 5%);
+  }
+  30% {
+    transform: translate(7%, -25%);
+  }
+  40% {
+    transform: translate(-5%, 25%);
+  }
+  50% {
+    transform: translate(-15%, 10%);
+  }
+  60% {
+    transform: translate(15%, 0);
+  }
+  70% {
+    transform: translate(0, 15%);
+  }
+  80% {
+    transform: translate(3%, 25%);
+  }
+  90% {
+    transform: translate(-10%, 10%);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }

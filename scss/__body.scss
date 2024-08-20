@@ -18,11 +18,12 @@ body {
     min-height: 100vh;
     background-color: #252832; 
     color: white; 
-    overflow: hidden; 
+    // overflow-x: hidden; 
     min-width: 370px;
+    height: 100%;
 }
 
-body::after {
+.grain-overlay {
     content: "";
     position: absolute;
     top: -100%;
@@ -34,5 +35,5 @@ body::after {
     animation: grain 15s steps(10) infinite;
     pointer-events: none; 
     z-index: -1; 
+    overflow-y: hidden;
 }
-
