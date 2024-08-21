@@ -1,270 +1,38 @@
-// $headline-padding-large: 40px 90px;
-// $headline-padding-medium: 30px 60px;
-// $headline-padding-small: 20px 40px;
-// $headline-padding-xsmall: 15px 20px;
-
-// $headline-height-large: 700px;
-// $headline-height-medium: 600px;
-// $headline-height-small: 500px;
-// $headline-height-xsmall: 400px;
-// $headline-height-xxsmall: 350px;
-
-// .welcomebla {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   width: 100%;
-//   height: auto;
-//   margin-top: 30px;
-
-//   .container {
-//     display: flex;
-//     justify-content: center;
-//     width: 100%;
-//     max-width: 1400px;
-
-//     @media screen and (max-width: 1500px) {
-//       width: 90%;
-//     }
-
-//     .headline {
-//       background-image: url("../img/Apie.png");
-//       position: relative;
-//       background-size: 120%;
-//       background-position: center;
-//       border-radius: 15px;
-//       padding: $headline-padding-large;
-//       height: $headline-height-large;
-//       overflow: hidden;
-//       width: 100%;
-//       margin: 0 auto;
-//       display: flex;
-//       align-items: center;
-//       box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.25),
-//         0 6px 12px rgba(0, 0, 0, 0.2);
-//       animation: zoomOutBg 5s ease-in-out forwards;
-
-//       &.zoom-out {
-//         background-size: cover; /* End at the original size */
-//       }
-
-//       &::before {
-//         content: "";
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         width: 100%;
-//         height: 100%;
-//         background: rgba(0, 0, 0, 0.5);
-//         border-radius: 15px;
-//         z-index: 0;
-//         // transition: transform 8s ease-in-out;
-//       }
-
-//       .text-box {
-//         color: white;
-//         text-align: left;
-//         position: relative;
-//         z-index: 1;
-//         width: 60%;
-//         animation: slide-up 1.2s ease-out forwards;
-
-//         @media screen and (max-width: 1266px) {
-//           width: 70%;
-//         }
-
-//         @media screen and (max-width: 985px) {
-//           width: 80%;
-//         }
-
-//         @media screen and (max-width: 790px) {
-//           width: 90%;
-//         }
-
-//         h1 {
-//           font-family: $font_5;
-//           font-size: 3.2rem;
-//           font-weight: 700;
-//           letter-spacing: 2px;
-//           line-height: 1.2;
-//           padding: 20px 0px;
-//           color: $white;
-
-//           @media screen and (max-width: 1266px) {
-//             font-size: 3rem;
-//           }
-
-//           @media screen and (max-width: 985px) {
-//             font-size: 2.5rem;
-//           }
-
-//           @media screen and (max-width: 790px) {
-//             font-size: 2.3rem;
-//             line-height: 1.1;
-//           }
-
-//           @media screen and (max-width: 550px) {
-//             font-size: 2rem;
-//           }
-
-//           @media screen and (max-width: 440px) {
-//             font-size: 1.8rem;
-//           }
-//         }
-
-//         h2 {
-//           font-family: $font_6;
-//           font-size: 1.5rem;
-//           font-weight: 300;
-//           letter-spacing: 2px;
-
-//           @media screen and (max-width: 1266px) {
-//             font-size: 1.4rem;
-//           }
-
-//           @media screen and (max-width: 985px) {
-//             font-size: 1.3rem;
-//           }
-
-//           @media screen and (max-width: 790px) {
-//             font-size: 1.2rem;
-//           }
-
-//           @media screen and (max-width: 550px) {
-//             font-size: 1.1rem;
-//           }
-//         }
-
-//         button {
-//           background-color: $accentcolor2;
-//           color: $white;
-//           font-family: $font_6;
-//           font-size: 1.1rem;
-//           text-transform: uppercase;
-//           padding: 14px 40px;
-//           margin: 25px 0px;
-//           border-radius: 8px;
-//           font-weight: 400;
-//           letter-spacing: 2px;
-
-//           @media screen and (max-width: 1266px) {
-//             padding: 14px 35px;
-//             font-size: 1.05rem;
-//           }
-
-//           @media screen and (max-width: 985px) {
-//             padding: 13px 30px;
-//             font-size: 1rem;
-//           }
-
-//           @media screen and (max-width: 790px) {
-//             padding: 13px 25px;
-//             font-size: 0.9rem;
-//           }
-
-//           @media screen and (max-width: 550px) {
-//             padding: 12px 20px;
-//             font-size: 0.8rem;
-//           }
-//         }
-//       }
-
-//       @media screen and (max-width: 1266px) {
-//         padding: $headline-padding-medium;
-//         height: $headline-height-medium;
-//       }
-
-//       @media screen and (max-width: 985px) {
-//         padding: $headline-padding-small;
-//         height: $headline-height-small;
-//       }
-
-//       @media screen and (max-width: 790px) {
-//         padding: $headline-padding-small;
-//         height: $headline-height-xsmall;
-//       }
-
-//       @media screen and (max-width: 550px) {
-//         padding: $headline-padding-xsmall;
-//         height: $headline-height-xxsmall;
-//       }
-//     }
-//   }
-// }
-
-// @keyframes slide-up {
-//   from {
-//     transform: translateY(100%);
-//     opacity: 0.2;
-//   }
-//   to {
-//     transform: translateY(0);
-//     opacity: 1;
-//   }
-// }
-
-// @keyframes zoomOutBg {
-//   0% {
-//     background-size: 120%; /* Start zoomed-in */
-//   }
-//   5% {
-//     background-size: 119%;
-//   }
-//   10% {
-//     background-size: 118%;
-//   }
-//   15% {
-//     background-size: 117%;
-//   }
-//   20% {
-//     background-size: 116%;
-//   }
-//   25% {
-//     background-size: 115%;
-//   }
-//   30% {
-//     background-size: 114%;
-//   }
-//   35% {
-//     background-size: 113%;
-//   }
-//   40% {
-//     background-size: 112%;
-//   }
-//   45% {
-//     background-size: 111%;
-//   }
-//   50% {
-//     background-size: 110%;
-//   }
-//   55% {
-//     background-size: 109%;
-//   }
-//   60% {
-//     background-size: 108%;
-//   }
-//   65% {
-//     background-size: 107%;
-//   }
-//   70% {
-//     background-size: 106%;
-//   }
-//   75% {
-//     background-size: 105%;
-//   }
-//   80% {
-//     background-size: 104%;
-//   }
-//   85% {
-//     background-size: 103%;
-//   }
-//   90% {
-//     background-size: 102%;
-//   }
-//   95% {
-//     background-size: 101%;
-//   }
-//   100% {
-//     background-size: cover; /* End at the original size */
-//   }
-// }
+.about {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  @media screen and (max-width: 790px) {
+    flex-direction: column;
+  }
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    @media screen and (max-width: 790px) {
+        width: 100%;
+      }
+  }
+  .about-img {
+    margin: 20px 0px;
+    width: 40%;
+    position: relative;
+    padding-top: 40%; /* This makes the container a square */
+    overflow: hidden;
+    @media screen and (max-width: 790px) {
+        width: 100%;
+        padding-top: auto;
+        margin: 0px;
+      }
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the image covers the container while maintaining its aspect ratio */
+      transform: translate(-50%, -50%); /* Center the image */
+      border-radius: 15px;
+    }
+  }
+}
