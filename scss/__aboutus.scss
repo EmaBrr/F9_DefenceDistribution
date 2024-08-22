@@ -10,8 +10,21 @@
     flex-direction: column;
     width: 60%;
     @media screen and (max-width: 790px) {
-        width: 100%;
+      width: 100%;
+    }
+    p {
+      color: $white;
+      padding: 20px 0px;
+      padding-right: 30px;
+      justify-content: center;
+      text-align: left;
+      @media screen and (max-width: 790px) {
+        padding: 0px;
+        justify-content: center;
+        text-align: center;
+        padding-top: 10px;
       }
+    }
   }
   .about-img {
     margin: 20px 0px;
@@ -20,10 +33,10 @@
     padding-top: 40%; /* This makes the container a square */
     overflow: hidden;
     @media screen and (max-width: 790px) {
-        width: 100%;
-        padding-top: auto;
-        margin: 0px;
-      }
+      width: 100%;
+      padding-top: auto;
+      margin: 0px;
+    }
     img {
       position: absolute;
       top: 50%;

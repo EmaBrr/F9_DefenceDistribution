@@ -12,6 +12,22 @@ body {
   justify-content: center;
   width: 100%;
   margin-bottom: 30px;
+  animation: slideInFromBelow 1.2s ease-out forwards; 
+  opacity: 0;
+  @media screen and (max-width: 690px) {
+    margin-bottom: 0px;
+  }
+}
+
+@keyframes slideInFromBelow {
+  0% {
+    transform: translateY(50px); 
+    opacity: 0; 
+  }
+  100% {
+    transform: translateY(0); 
+    opacity: 1; 
+  }
 }
 
 .section-container {
@@ -26,6 +42,11 @@ body {
 
   @media screen and (max-width: 1500px) {
     width: 90%;
+  }
+
+  @media screen and (max-width: 790px) {
+    padding: 0px 20px;
+    padding-top: 30px;
   }
 
   h1 {
@@ -44,7 +65,7 @@ body {
     }
 
     @media screen and (max-width: 985px) {
-      font-size: 2.5rem;
+      font-size: 2.3rem;
     }
 
     @media screen and (max-width: 790px) {
@@ -91,28 +112,36 @@ body {
   }
 
   h3 {
-    font-family: $font_5;
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-family: $font_6;
+    font-size: 1.4rem;
+    font-weight: 400;
     letter-spacing: 1px;
-    line-height: 1.2;
+    line-height: 1;
     padding: 20px 0px;
     color: $white;
+    text-transform: uppercase;
+    text-align: center;
 
     @media screen and (max-width: 1266px) {
-      font-size: 1.4rem;
-    }
-
-    @media screen and (max-width: 985px) {
-      font-size: 1.3rem;
-    }
-
-    @media screen and (max-width: 790px) {
       font-size: 1.2rem;
     }
 
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 985px) {
+      font-size: 1rem;
+    }
+
+    @media screen and (max-width: 790px) {
+      font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 690px) {
       font-size: 1.1rem;
+      padding: 10px 0px;
+    }
+
+    @media screen and (max-width: 550px) {
+      font-size: 1rem;
+      padding: 20px 0px;
     }
   }
 
@@ -122,9 +151,7 @@ body {
     font-weight: 300;
     letter-spacing: 1px;
     line-height: 2;
-    padding: 20px 0px;
-    padding-right: 30px;
-    color: $white;
+    color: $accentcolor2;
 
     @media screen and (max-width: 1266px) {
       font-size: 1.15rem;
@@ -138,8 +165,12 @@ body {
       font-size: 0.95rem;
     }
 
+    @media screen and (max-width: 690px) {
+      font-size: 1rem;
+    }
+
     @media screen and (max-width: 550px) {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
   }
 }

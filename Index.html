@@ -13,7 +13,13 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"
       defer
     ></script>
-    <script src="main.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/map-brands.js" defer></script>
+    <script src="./js/map-interactivity.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/ac6953d5aa.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./style/app.css" />
     <title>F9 Defence Distribution</title>
   </head>
@@ -64,7 +70,42 @@
     </div>
     <div class="section">
       <div class="section-container">
-        <span>WHO ARE WE?</span>
+        <span>WHAT WE DO</span>
+        <h1>OUR SERVICES</h1>
+        <div class="services">
+          <div class="item">
+            <i class="fa-solid fa-person-chalkboard"></i>
+            <h3>Trainings</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+              rerum nemo accusantium recusandae repellat dolorum adipisci eius
+              voluptatibus ad ipsa?
+            </p>
+          </div>
+          <div class="item">
+            <i class="fa-regular fa-handshake"></i>
+            <h3>Product Distribution</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Assumenda quo a iste iure tempora ea? Asperiores cupiditate
+              molestiae dolorum tempore.
+            </p>
+          </div>
+          <div class="item">
+            <i class="fa-regular fa-lightbulb"></i>
+            <h3>Solution Creation</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi
+              vitae sequi asperiores molestias aperiam, alias blanditiis
+              quibusdam consequuntur veniam? Laboriosam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="section-container">
+        <span>WHO WE ARE</span>
         <h1>ABOUT US</h1>
         <div class="about">
           <div class="about-text">
@@ -86,7 +127,7 @@
     </div>
     <div class="section">
       <div class="section-container">
-        <span>What do we stand for?</span>
+        <span>WHAT WE STAND FOR</span>
         <h1>OUR VALUES</h1>
         <div class="about">
           <div class="about-text">
@@ -105,6 +146,10 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="map-container">
+      <div id="tooltip" class="tooltip"></div>
+      <object class="europe-map" id="europe-map" type="image/svg+xml" data="./europe.svg"></object>
     </div>
     <footer class="bg-grain"></footer>
   </body>
