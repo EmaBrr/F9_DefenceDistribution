@@ -185,8 +185,8 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
-  color: #bd9f7c;
-  border-bottom: 1px solid #bd9f7c;
+  color: #b09c86;
+  border-bottom: 1px solid #b09c86;
   width: fit-content;
 }
 @media screen and (max-width: 1266px) {
@@ -253,7 +253,7 @@ body {
   font-weight: 300;
   letter-spacing: 1px;
   line-height: 2;
-  color: #bd9f7c;
+  color: #b09c86;
 }
 @media screen and (max-width: 1266px) {
   .section-container p {
@@ -290,7 +290,7 @@ header .slogan {
   overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
-  background-color: #bd9f7c;
+  background-color: #b09c86;
   display: flex;
   align-items: center;
 }
@@ -594,7 +594,7 @@ header .nav .nav-container .navigation .nav-items li a :visited {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 15px;
   z-index: 0;
 }
@@ -682,7 +682,7 @@ header .nav .nav-container .navigation .nav-items li a :visited {
   }
 }
 .welcome .container .headline .text-box button {
-  background-color: #bd9f7c;
+  background-color: #b09c86;
   color: #f8f7f6;
   font-family: "Work Sans", sans-serif;
   font-size: 1.1rem;
@@ -749,7 +749,7 @@ header .nav .nav-container .navigation .nav-items li a :visited {
   .welcome .container .headline {
     padding: 15px 20px;
     height: 82vh;
-    max-height: 500px;
+    max-height: 550px;
   }
 }
 
@@ -781,7 +781,7 @@ header .nav .nav-container .navigation .nav-items li a :visited {
 }
 .services .item i {
   font-size: 2.5rem;
-  color: #bd9f7c;
+  color: #b09c86;
   margin-bottom: 15px;
 }
 @media screen and (max-width: 690px) {
