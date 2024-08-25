@@ -176,19 +176,19 @@ $headline-height-xxsmall: 350px;
       @media screen and (max-width: 985px) {
         padding: $headline-padding-small;
         height: 82vh;
-        max-height: 690px;
+        max-height: 670px;
       }
 
       @media screen and (max-width: 790px) {
         padding: $headline-padding-small;
         height: 82vh;
-        max-height: 680px;
+        max-height: 650px;
       }
 
       @media screen and (max-width: 550px) {
         padding: $headline-padding-xsmall;
         height: 82vh;
-        max-height: 650px;
+        max-height: 630px;
       }
     }
   }
