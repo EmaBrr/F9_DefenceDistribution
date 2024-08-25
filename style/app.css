@@ -100,7 +100,6 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 30px;
   animation: slideInFromBelow 1.2s ease-out forwards;
   opacity: 0;
 }
@@ -560,6 +559,7 @@ header .nav .nav-container .navigation .nav-items li a :visited {
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding-bottom: 35px;
 }
 .welcome .container {
   display: flex;
@@ -584,7 +584,6 @@ header .nav .nav-container .navigation .nav-items li a :visited {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  padding-bottom: 15px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.25), 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 .welcome .container .headline::before {
@@ -822,7 +821,7 @@ header .nav .nav-container .navigation .nav-items li a :visited {
 .about .about-text {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 100%;
 }
 @media screen and (max-width: 790px) {
   .about .about-text {
@@ -834,7 +833,7 @@ header .nav .nav-container .navigation .nav-items li a :visited {
   padding: 20px 0px;
   padding-right: 30px;
   justify-content: center;
-  text-align: left;
+  text-align: center;
 }
 @media screen and (max-width: 790px) {
   .about .about-text p {
