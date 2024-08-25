@@ -3,6 +3,7 @@
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
     gap: 20px; /* Space between items */
     padding: 20px;
+    justify-content: center;
     box-sizing: border-box; /* Include padding in width calculation */
 }
 
