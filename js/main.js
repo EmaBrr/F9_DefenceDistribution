@@ -77,3 +77,29 @@ window.addEventListener("load", applyZoomEffect);
 // Reapply the zoom effect on screen resize
 window.addEventListener("resize", applyZoomEffect);
 
+// values
+document.addEventListener('DOMContentLoaded', function () {
+  var valueItems = document.querySelectorAll('.value-item');
+
+  valueItems.forEach(function(item) {
+      item.addEventListener('mouseenter', function() {
+          var content = item.querySelector('.value-overlay');
+          var image = item.querySelector('.value-image');
+          var title = item.querySelector('.value-title');
+
+          content.style.opacity = '1'; // Show overlay
+          image.style.opacity = '0.3'; // Darken image
+          title.style.opacity = '0'; // Hide title
+      });
+
+      item.addEventListener('mouseleave', function() {
+          var content = item.querySelector('.value-overlay');
+          var image = item.querySelector('.value-image');
+          var title = item.querySelector('.value-title');
+
+          content.style.opacity = '0'; // Hide overlay
+          image.style.opacity = '1'; // Restore image
+          title.style.opacity = '1'; // Show title
+      });
+  });
+});
