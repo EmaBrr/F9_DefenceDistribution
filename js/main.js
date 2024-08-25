@@ -39,18 +39,21 @@ function applyZoomEffect() {
   if (window.innerWidth > 1200) {
     startSize = "130%"; // Larger start size for larger screens
     endSize = "110%"; // Larger end size for larger screens
-  } else if (window.innerWidth > 968) {
+  } else if (window.innerWidth > 1092) {
     startSize = "140%"; // Medium start size for medium screens
     endSize = "120%"; // Medium end size for medium screens
-  } else if (window.innerWidth > 768) {
-    startSize = "150%"; // Medium start size for medium screens
-    endSize = "130%"; // Medium end size for medium screens
-  } else if (window.innerWidth > 476) {
+  } else if (window.innerWidth > 968) {
     startSize = "160%"; // Medium start size for medium screens
-    endSize = "140%"; // Medium end size for medium screens
+    endSize = "150%"; // Medium end size for medium screens
+  } else if (window.innerWidth > 768) {
+    startSize = "210%"; // Medium start size for medium screens
+    endSize = "200%"; // Medium end size for medium screens
+  } else if (window.innerWidth > 476) {
+    startSize = "240%"; // Medium start size for medium screens
+    endSize = "230%"; // Medium end size for medium screens
   } else {
-    startSize = "210%"; // Smaller start size for smaller screens
-    endSize = "190%"; // Smaller end size for smaller screens
+    startSize = "300%"; // Smaller start size for smaller screens
+    endSize = "290%"; // Smaller end size for smaller screens
   }
 
   // GSAP animation for the zoom-out effect using the calculated sizes

@@ -90,7 +90,7 @@ h6 {
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: #252832;
+  background-color: #191919;
   color: white;
   overflow-x: hidden;
 }
@@ -573,17 +573,18 @@ header .nav .nav-container .navigation .nav-items li a :visited {
   }
 }
 .welcome .container .headline {
-  background-image: url("../img/Apie.png");
+  background-image: url("../img/Parrot-army-drone.jpeg");
   position: relative;
   background-position: center;
   border-radius: 15px;
   padding: 40px 90px;
-  height: 80vh;
+  height: 82vh;
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
+  padding-bottom: 15px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.25), 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 .welcome .container .headline::before {
@@ -593,7 +594,7 @@ header .nav .nav-container .navigation .nav-items li a :visited {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 15px;
   z-index: 0;
 }
@@ -719,25 +720,36 @@ header .nav .nav-container .navigation .nav-items li a :visited {
 @media screen and (max-width: 1266px) {
   .welcome .container .headline {
     padding: 30px 60px;
-    height: 600px;
+    height: 82vh;
+    max-height: 800px;
+  }
+}
+@media screen and (max-width: 1092px) {
+  .welcome .container .headline {
+    padding: 20px 40px;
+    height: 82vh;
+    max-height: 700px;
   }
 }
 @media screen and (max-width: 985px) {
   .welcome .container .headline {
     padding: 20px 40px;
-    height: 500px;
+    height: 82vh;
+    max-height: 650px;
   }
 }
 @media screen and (max-width: 790px) {
   .welcome .container .headline {
     padding: 20px 40px;
-    height: 400px;
+    height: 82vh;
+    max-height: 600px;
   }
 }
 @media screen and (max-width: 550px) {
   .welcome .container .headline {
     padding: 15px 20px;
-    height: 350px;
+    height: 82vh;
+    max-height: 500px;
   }
 }
 

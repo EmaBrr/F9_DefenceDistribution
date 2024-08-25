@@ -1,7 +1,8 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: #252832;
+//   background-color: #252832;
+background-color: #191919;
   color: white;
   overflow-x: hidden;
 }
@@ -12,8 +13,11 @@ body {
   justify-content: center;
   width: 100%;
   margin-bottom: 30px;
-  animation: slideInFromBelow 1.2s ease-out forwards; 
+  animation: slideInFromBelow 1.2s ease-out forwards;
   opacity: 0;
+//   &:first-child {
+//     padding-top: 30px;
+//   }
   @media screen and (max-width: 690px) {
     margin-bottom: 0px;
   }
@@ -21,12 +25,12 @@ body {
 
 @keyframes slideInFromBelow {
   0% {
-    transform: translateY(50px); 
-    opacity: 0; 
+    transform: translateY(50px);
+    opacity: 0;
   }
   100% {
-    transform: translateY(0); 
-    opacity: 1; 
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
